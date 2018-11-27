@@ -3,8 +3,6 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 
-console.log({ document });
-
 ReactDOM.render(
   <BrowserRouter>
     <App />
@@ -12,4 +10,7 @@ ReactDOM.render(
   document.getElementById("app")
 );
 
-module.hot.accept();
+// Hot Module Replacement API
+if (module.hot) {
+  module.hot.accept();
+}

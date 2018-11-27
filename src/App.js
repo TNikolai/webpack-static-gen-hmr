@@ -25,7 +25,7 @@ const App = () => (
       exact
       render={() => (
         <div>
-          <Link to="/hello">Hello</Link>
+          <Link to="/hello">Hello Works with hot reload</Link>
           <br />
           <Link to="/world">World </Link>
         </div>
