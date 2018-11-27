@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "webpack-dev-server --config ./webpack/dev.config.js --mode development",
+    "build": "webpack --config ./webpack/prod.config.js --mode production"
   },
   "keywords": [],
   "author": "",
@@ -15,12 +16,15 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "react-hot-loader": "^4.3.12",
+    "static-site-generator-webpack-plugin": "^3.4.2",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-dom-server": "0.0.5",
+    "react-router-dom": "^4.3.1"
   }
 }
