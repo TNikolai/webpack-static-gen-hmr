@@ -1,7 +1,7 @@
 # Webpack static generator with hot module replacement.
 
 This repository shows how to configure from scratch project with hot module replacement plugin and webpack static files generation.
-For view rendering used jsx and React.
+For view rendering used React jsx.
 
 ### It is lightweight project config which includes: 
 * babel
