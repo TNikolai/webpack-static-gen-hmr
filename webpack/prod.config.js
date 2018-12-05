@@ -2,7 +2,7 @@ const path = require("path");
 const StaticSiteGeneratorPlugin = require("static-site-generator-webpack-plugin");
 
 module.exports = {
-  entry: "./src/server.js",
+  entry: "./server/server.js",
   stats: "minimal",
   target: "node",
   cache: true,
