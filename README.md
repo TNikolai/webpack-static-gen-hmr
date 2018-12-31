@@ -4,9 +4,9 @@ This repository shows how to configure from scratch project with hot module repl
 For view rendering used React jsx.
 
 ### Development:
-Install dependencies **npm i** 
-To build project **npm run build**
-To start development server **npm start** 
+- Install dependencies **npm i** 
+- To build project **npm run build**
+- To start development server **npm start** 
 
 ### It is lightweight project config which includes: 
 * babel
@@ -16,8 +16,6 @@ To start development server **npm start**
 * react-router-dom
 
 ### Configs:
-Static files generation in [prod.static.render.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/prod.static.render.js).
-
-Production client code build [prod.config.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/prod.static.render.js).
-
-Hot module replacement in [dev.config.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/dev.config.js).
+- Static files generation in [prod.static.render.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/prod.static.render.js).
+- Production client code build [prod.config.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/prod.static.render.js).
+- Hot module replacement in [dev.config.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/dev.config.js).
