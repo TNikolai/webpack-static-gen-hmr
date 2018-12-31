@@ -1,35 +1,23 @@
-const path = require("path");
-const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { rules, output } = require('./webpack.parts');
 
 module.exports = {
-  mode: "development",
-  entry: [path.join(__dirname, "../src/index.js")],
-  output: {
-    path: path.resolve("dist"),
-    filename: "bundle.js",
-    publicPath: "/"
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: "babel-loader"
-      }
-    ]
-  },
+  mode: 'development',
+  entry: './src/index.js',
+  output: output(),
+  module: { rules },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "../public/index.html")
-    }),
+    new HtmlWebpackPlugin({ template: path.resolve('public/index.html') }),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
     hot: true,
-    publicPath: "/",
-    contentBase: path.resolve(__dirname, "../dist")
+    publicPath: '/',
+    contentBase: path.resolve('build'),
+    historyApiFallback: true,
   },
-  devtool: "inline-source-map"
+  devtool: 'cheap-module-eval-source-map',
 };

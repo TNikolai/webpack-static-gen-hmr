@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/dev.config.js --env dev",
-    "build": "webpack --config ./webpack/prod.config.js --mode production"
+    "start": "webpack-dev-server --config ./webpack/dev.config.js --env.NODE_ENV=development",
+    "build": "npm run build-static-html & npm run build-client",
+    "build-static-html": "webpack --config ./webpack/prod.static.render.js && rm build/ignore.js",
+    "build-client": "webpack --config ./webpack/prod.client.config.js"
   },
   "keywords": [],
   "author": "",
