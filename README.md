@@ -11,5 +11,6 @@ For view rendering used React jsx.
 * react-router-dom
 
 ### Configs:
-Static files generation in [prod.config.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/prod.config.js)
+Static files generation in [prod.static.render.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/prod.static.render.js)
+Production client code build [prod.config.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/prod.static.render.js)
 Hot module replacement in [dev.config.js](https://github.com/TNikolai/webpack-static-gen-hmr/blob/master/webpack/dev.config.js)
